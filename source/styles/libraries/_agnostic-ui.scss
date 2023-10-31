@@ -1,0 +1,19 @@
+@import 'agnostic-css/public/css-dist/common.concat';
+@import 'agnostic-css/public/css-dist/components.concat';
+
+body {
+   font-family: var(--agnostic-font-family-body);
+   font-size: var(--agnostic-body);
+   color: var(--agnostic-font-color);
+   -webkit-font-smoothing: antialiased;
+   line-height: 1.5;
+   color-scheme: light;
+ }
+
+:root{
+   color-scheme: light;
+}
+
+html, body{
+   color-scheme: light !important;
+}

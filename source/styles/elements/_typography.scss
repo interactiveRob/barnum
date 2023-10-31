@@ -1,0 +1,77 @@
+p {
+    margin: 0;
+}
+
+pre {
+    font-family: $metro;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.rich-text {
+    //rich text area styles
+
+    a:not(.c-btn):not(.button):not(.ignore-link-style){
+        color: c(primary);
+        text-decoration: underline;
+        display: inline;
+
+        &:active {
+            color: c(gray);
+        }
+
+        @include media-breakpoint-up(lg) {
+            &:hover {
+                color: c(gray);
+            }
+        }
+    }
+
+    a + a[href*='mailto'] {
+        margin-left: 1.8rem;
+    }
+
+
+    p,
+    ul,
+    li {
+        font-size: 1.8rem;
+        line-height: 1.7;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    .bg-dark-mode * {
+        color: c(white);
+    }
+}
+
+.text-link {
+    text-decoration: underline;
+}
+
+.text {
+    &-left {
+        text-align: left !important;
+    }
+
+    &-center {
+        text-align: center !important;
+    }
+
+    &-right {
+        text-align: right !important;
+    }
+}
+
+a[data-js] {
+    cursor: pointer;
+}

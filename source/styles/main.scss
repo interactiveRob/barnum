@@ -1,0 +1,36 @@
+/*———— -Libraries- ————*/
+@import "libraries/agnostic-ui";
+@import "libraries/bootstrap";
+
+/*———— -Tools- ————*/
+@import "tools/mixins";
+@import "tools/functions/functions";
+
+/*———— -Bolierplate- ————*/
+@import "generic/box-sizing";
+@import "generic/reset";
+
+/*———— -Fonts- ————*/
+//@import "fonts/fonts";
+
+/*———— -Settings- ————*/
+@import "settings";
+
+/*———— -Global Styles- ————*/
+@import "elements/base";
+@import "elements/elements";
+@import "elements/typography";
+
+/*———— -Animation- ————*/
+@import "animation/animation";
+
+/*———— -Layouts.- ————*/
+@import "layouts/spacing";
+
+/*———— -Components etc. A-Z- ————*/
+@import "components/footer";
+@import "components/header";
+@import "components/svgs";
+
+/*———— -Trumps- ————*/
+@import "trumps/utilities";

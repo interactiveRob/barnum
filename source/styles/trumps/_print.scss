@@ -1,0 +1,14 @@
+@media print {
+    @page {
+        margin: 2cm;
+
+        size: 1200px 11in;
+    }
+}
+
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
