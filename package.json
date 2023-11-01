@@ -1,6 +1,6 @@
 {
   "name": "secu-finance-fair",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SECU finance fair web app",
   "author": "SECU of Maryland",
   "license": "© Copyrighted, All rights reserved",
@@ -8,7 +8,6 @@
   "scripts": {
     "watch": "gulp watch --mode development",
     "sync": "gulp sync --mode development",
-    "development:sync": "concurrently --raw \"yarn sync\" \"yarn pl sync\"",
     "development": "gulp --mode development",
     "production": "yarn gulp --mode production"
   },

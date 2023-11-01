@@ -17,3 +17,8 @@ body {
 html, body{
    color-scheme: light !important;
 }
+
+.btn:hover {
+   opacity: 0.85;
+   text-decoration: none;
+}

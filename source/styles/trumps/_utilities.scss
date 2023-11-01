@@ -14,6 +14,33 @@
     position: fixed;
 }
 
+
+.relative {
+   position: relative;
+}
+
+.visually-hidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}
+
+.js-no-transition {
+   transition-duration: 0ms;
+}
+
+.viewport-boundary {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+
 @each $label, $z-index in $z-indexes {
     .z-#{$label} {
         z-index: $z-index !important;
@@ -32,37 +59,4 @@
     .text-#{$label} {
         color: $color !important;
     }
-}
-
-.d-block {
-    display: block !important;
-}
-
-.mx-auto {
-    margin: 0 auto !important;
-}
-
-.relative {
-    position: relative;
-}
-
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.js-no-transition {
-    transition-duration: 0ms;
-}
-
-.viewport-boundary {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
 }
